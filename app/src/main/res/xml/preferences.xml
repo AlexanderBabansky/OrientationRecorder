@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="afap"
+            android:title="As fast as posible" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="tps"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text="100"
+            android:inputType="numberDecimal"
+            android:title="Ticks per second" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Output">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="write_binary"
+            android:title="Use binary format" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

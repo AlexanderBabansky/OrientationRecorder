@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_SelectDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="104dp"
+        android:onClick="SelectDirectory"
+        android:text="Select directory"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tv_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Hello"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SelectDirectory" />
+
+    <Button
+        android:id="@+id/btn_Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="19dp"
+        android:enabled="false"
+        android:onClick="StartRecording"
+        android:text="start"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Status"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Button
+        android:id="@+id/btn_Stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="19dp"
+        android:enabled="false"
+        android:onClick="StopRecording"
+        android:text="stop"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Start"
+        tools:layout_editor_absoluteX="5dp" />
+
+</android.support.constraint.ConstraintLayout>
