@@ -42,11 +42,11 @@ Recording starts with a *coundown timer*, for syncing with video capturing devic
 **binary**
 First 4 bytes of file are Integer with value 1. It is for detecting ENDIANESS of CPU. Data binary format
 
-Bytes:	0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1
-		+---------------+-------+-------+-------+-------+
-		|   TIMESTAMP   |   W   |   X   |   Y   |   Z   |
-		|               |       |       |       |       |
-		+---------------+-------+-------+-------+-------+
+0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0
++---------------+-------+-------+-------+-------+
+|   TIMESTAMP   |   W   |   X   |   Y   |   Z   |
+|               |       |       |       |       |
++---------------+-------+-------+-------+-------+
 
 TIMESTAMP: 8 bytes, long
 	Timestamp in milliseconds from starting recording timer.
