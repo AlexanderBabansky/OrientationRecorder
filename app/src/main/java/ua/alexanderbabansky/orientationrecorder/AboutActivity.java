@@ -18,7 +18,7 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     public void GetMoreInfo(View view){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://example.com"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/AlexanderBabansky/OrientationRecorder"));
         startActivity(intent);
     }
 

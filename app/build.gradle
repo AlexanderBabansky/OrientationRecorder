@@ -1,14 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+
+        }
+    }
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "ua.alexanderbabansky.orientationrecorder"
         minSdkVersion 19
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 28
+        versionCode 2
+        versionName "0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
@@ -20,6 +25,7 @@ android {
                 arguments "-DANDROID_STL=c++_shared"
             }
         }
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
