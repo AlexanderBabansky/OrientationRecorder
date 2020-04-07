@@ -2,6 +2,8 @@
 
 Android app which records orientation (rotation) of Android device
 
+<a href="https://play.google.com/store/apps/details?id=ua.alexanderbabansky.orientationrecorder"><img height="80dp" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
+
 ## Getting Started
 
 ### Current status
@@ -19,7 +21,7 @@ To build app you need:
 
 ### Installing
 
-You can build app, download prebuild APK for *Android 4.4+*, *arm64-v8*, *armeabi-v7a*.
+You can build app, download prebuild APK for *Android 4.4+*, *arm64-v8*, *armeabi-v7a*, or get it on [Google Play](https://play.google.com/store/apps/details?id=ua.alexanderbabansky.orientationrecorder)
 
 ## Usage
 
